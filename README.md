@@ -1,5 +1,5 @@
-![nvim screenshot](./images/fish.png)
-![nvim screenshot](./images/nvim.png)
+[nvim screenshot](./images/fish.png)
+[nvim screenshot](./images/nvim.png)
 
 # My dotfiles
 
