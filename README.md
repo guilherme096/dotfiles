@@ -3,7 +3,7 @@
 
 # My dotfiles
 
-These configs are a wyp and I do not recommend using them without knowing their intricacies.
+These configs are a wip and I do not recommend using them without knowing their intricacies.
 
 ## Contents
 
