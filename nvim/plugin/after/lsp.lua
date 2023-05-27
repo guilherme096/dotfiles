@@ -19,6 +19,7 @@ lsp.ensure_installed({
 	'tailwindcss',
 	'astro',
 	'lua_ls',
+    'marksman',
 })
 
 local cmp = require('cmp')
