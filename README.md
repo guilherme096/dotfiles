@@ -8,6 +8,7 @@ These configs are a wip and I do not recommend using them without knowing their 
 ## Contents
 
 - [NeoVim Setup](#Neovim-Setup)
+- [Terminal](#terminal)
 
 ## Neovim setup
 
@@ -25,3 +26,11 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [github/copilot.vim] (nhttps://github.com/github/copilot.vim) - Github Copilot
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Autopairs
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Use treesitter to auto close and auto rename html tag
+
+## Terminal
+
+- [iterm2](https://iterm2.com/)
+- [Fish shell](https://fishshell.com/)
+- [bobthefish](https://github.com/oh-my-fish/theme-bobthefish/) - Theme
+- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts.
+- [z](https://github.com/jethrokuan/z) - For jumping arround
