@@ -21,12 +21,14 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "auto" 
+vim.opt.signcolumn = "auto"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+vim.opt.cursorline = true
+
 vim.opt.colorcolumn = "0"
 vim.diagnostic.config({
-  virtual_text = false,
+	virtual_text = true,
 })

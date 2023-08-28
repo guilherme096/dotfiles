@@ -36,6 +36,13 @@ function __check_rvm --on-variable PWD --description 'Do nvm stuff'
   end
 end
 
+# ide
+function ide
+    ~/dotfiles/tmux/ide.sh $argv
+end
+funcsave ide
+
+
 set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
 if test -f $LOCAL_CONFIG
   source $LOCAL_CONFIG
