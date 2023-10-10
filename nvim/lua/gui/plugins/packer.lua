@@ -13,7 +13,12 @@ local packer_bootstrap = ensure_packer()
 
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
-	use({ "nvimdev/guard.nvim" })
+	use({ "nvimdev/guard.nvim",
+            dependencies = {
+        "nvimdev/guard-collection",
+    },
+})
+use{ "nvimdev/guard-collection"}
 	use({
 		"gelguy/wilder.nvim",
 		config = function()
@@ -69,6 +74,11 @@ return require("packer").startup(function(use)
 
 	-- Copilot
 	use({ "/github/copilot.vim" })
+
+    use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+})
 
 	-- Put this at the end after all plugins
 	if packer_bootstrap then

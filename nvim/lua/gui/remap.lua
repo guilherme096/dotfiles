@@ -10,9 +10,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Replace current word in file
 vim.keymap.set("n", "<leader>rcw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- Nvim-Tree
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle <Enter>")
-
 -- Increment/decrement
 vim.keymap.set("n", "+", "<C-a>")
 vim.keymap.set("n", "-", "<C-x>")
@@ -36,3 +33,6 @@ vim.keymap.set("n", "<C-.>", "<Cmd>tabprev<CR>")
 -- Copilot
 vim.keymap.set("n", "<leader>cpe", "<Cmd>Copilot enable<CR>")
 vim.keymap.set("n", "<leader>cpd", "<Cmd>Copilot disable<CR>")
+
+-- Auto close brackets
+vim.keymap.set("i", "{", "{}<Left>")
