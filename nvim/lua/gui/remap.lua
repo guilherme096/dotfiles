@@ -38,4 +38,4 @@ vim.keymap.set("n", "<leader>cpd", "<Cmd>Copilot disable<CR>")
 vim.keymap.set("i", "{", "{}<Left>")
 
 -- fugitive
-vim.keymap.set("n", "<leader>gac", "<Cmd>Git add .<CR> <Cmd>Git commit<CR>")
+vim.keymap.set("n", "<leader>ga", "<Cmd>Git add .<CR>")
