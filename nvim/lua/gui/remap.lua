@@ -36,3 +36,6 @@ vim.keymap.set("n", "<leader>cpd", "<Cmd>Copilot disable<CR>")
 
 -- Auto close brackets
 vim.keymap.set("i", "{", "{}<Left>")
+
+-- fugitive
+vim.keymap.set("n", "<leader>gac", "<Cmd>Git add .<CR> <Cmd>Git commit<CR>")
