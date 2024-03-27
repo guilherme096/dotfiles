@@ -1,5 +1,6 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.guicursor = ""
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -29,6 +30,3 @@ vim.opt.updatetime = 50
 vim.opt.cursorline = true
 
 vim.opt.colorcolumn = "0"
-vim.diagnostic.config({
-	virtual_text = true,
-})

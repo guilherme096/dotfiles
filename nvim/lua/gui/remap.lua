@@ -14,8 +14,6 @@ vim.keymap.set("n", "<leader>rcw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left
 vim.keymap.set("n", "+", "<C-a>")
 vim.keymap.set("n", "-", "<C-x>")
 
--- New tab
-vim.keymap.set("n", "te", ":tabedit")
 -- Split window
 vim.keymap.set("n", "<leader>sh", ":split<Return><C-w>w")
 vim.keymap.set("n", "<leader>sv", ":vsplit<Return><C-w>w")
@@ -36,6 +34,5 @@ vim.keymap.set("n", "<leader>cpd", "<Cmd>Copilot disable<CR>")
 
 -- Auto close brackets
 vim.keymap.set("i", "{", "{}<Left>")
-
 -- fugitive
 vim.keymap.set("n", "<leader>ga", "<Cmd>Git add .<CR>")
