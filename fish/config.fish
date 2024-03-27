@@ -1,4 +1,9 @@
-set fish_greeting ""
+set fish_greeting "🌹"
+
+set -Ux CLASSPATH /usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPATH
+set -gx PATH /usr/local/bin/antlr4:$PATH
+
+funcsave antlr4
 
 set -gx TERM xterm-256color
 
@@ -35,12 +40,6 @@ function __check_rvm --on-variable PWD --description 'Do nvm stuff'
   else
   end
 end
-
-# ide
-function ide
-    ~/dotfiles/tmux/ide.sh $argv
-end
-funcsave ide
 
 
 set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
