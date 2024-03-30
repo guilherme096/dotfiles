@@ -11,7 +11,8 @@ setw -g window-status-style fg="#505050",bg="#202020",none
 set -g status-left-length "100"
 set -g status "on"
 set -g status-right-length "100"
-set -g status-bg "#005f87"
+set -g status-bg "#1d2021"
+set -g status-position top
 
 set -g status-justify "left"
 setw -g window-status-separator ""
