@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
 
+-- capital :W also saves
+vim.cmd("command! -bang W w")
+
 -- Open/close file explorer
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
