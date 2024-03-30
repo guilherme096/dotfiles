@@ -13,12 +13,19 @@ local packer_bootstrap = ensure_packer()
 
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
+    use("folke/zen-mode.nvim")
 	use({
 		"gelguy/wilder.nvim",
 		config = function()
 			-- config goes here
 		end,
 	})
+
+    use {
+        "ThePrimeagen/harpoon",
+        requires = { {"nvim-lua/plenary.nvim"} },
+        branch = "harpoon2",
+    }
 
 	use({
 		"VonHeikemen/lsp-zero.nvim",
