@@ -5,6 +5,9 @@ harpoon:setup()
 -- REQUIRED
 
 vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end)
+vim.keymap.set("n", "<leader>r", function() harpoon:list():remove() end)
+vim.keymap.set("n", "<leader>cr", function() harpoon:list():clear() end)
+
 
 vim.keymap.set("n", "<C-n>", function() harpoon:list():select(1) end)
 vim.keymap.set("n", "<C-m>", function() harpoon:list():select(2) end)
