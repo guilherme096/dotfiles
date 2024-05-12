@@ -8,6 +8,7 @@ lsp.ensure_installed({
 	"lua_ls",
 	"clangd",
 	"gopls",
+    "templ",
 })
 
 -- Fix Undefined global 'vim'
@@ -64,6 +65,8 @@ lsp.on_attach(function(client, bufnr)
 		vim.lsp.buf.rename()
 	end, opts)
 end)
+
+vim.filetype.add({extension = { templ = "templ" }})
 
 lsp.setup()
 
