@@ -18,6 +18,7 @@ set -g status-justify "left"
 setw -g window-status-separator ""
 
 set -g status-left "#[fg=#505050,bg=#202020] #S #[fg=#202020,bg=#202020,nobold,nounderscore,noitalics]"
-set -g status-right "#[fg=#505050,bg=#202020] #(echo $USER)@#h"
+
+set -g status-right "#[fg=#686d43,bg=#202020] 🎧 #{spotify_track} - #{spotify_artist} - #{spotify_album} | #(echo $USER)@#h"
 setw -g window-status-format "#[fg=#505050,bg=#202020] #I |#[fg=#505050,bg=#202020] #W "
 setw -g window-status-current-format "#[fg=#202020,bg=#303030,nobold,nounderscore,noitalics]#[fg=#b0b0b0,bg=#303030] #I |#[fg=#b0b0b0,bg=#303030] #W #[fg=#303030,bg=#202020,nobold,nounderscore,noitalics]"

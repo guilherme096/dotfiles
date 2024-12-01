@@ -6,6 +6,8 @@
 	<true/>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
+	<key>BadgeTopMargin</key>
+	<integer>10</integer>
 	<key>Command</key>
 	<string></string>
 	<key>CopyLastNewline</key>
@@ -2876,7 +2878,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>1000</integer>
 			<key>Selected Text Color</key>
@@ -3700,6 +3702,10 @@
 	<integer>5</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>TerminalMargin</key>
+	<integer>0</integer>
+	<key>TerminalVMargin</key>
+	<integer>2</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>URLHandlersByGuid</key>

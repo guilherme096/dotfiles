@@ -17,7 +17,8 @@ return require("packer").startup(function(use)
 	use({
 		"gelguy/wilder.nvim",
 		config = function()
-			-- config goes here
+                local wilder = require("wilder")
+                wilder.setup({ modes = { ":", "/", "?" } })
 		end,
 	})
 
@@ -26,6 +27,11 @@ return require("packer").startup(function(use)
         requires = { {"nvim-lua/plenary.nvim"} },
         branch = "harpoon2",
     }
+
+    use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+}
 
 	use({
 		"VonHeikemen/lsp-zero.nvim",
@@ -70,7 +76,7 @@ return require("packer").startup(function(use)
 	})
 
 	-- Copilot
-	use({ "/github/copilot.vim" })
+	use({ "github/copilot.vim" })
 
 	use({
 		"iamcco/markdown-preview.nvim",

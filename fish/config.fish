@@ -16,9 +16,11 @@ set -g theme_hostname always
 
 # aliases
 alias ls "ls -p -G"
-alias la "ls -A"
-alias ll "ls -l"
-alias lla "ll -A"
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 alias g git
 command -qv nvim && alias vim nvim
 

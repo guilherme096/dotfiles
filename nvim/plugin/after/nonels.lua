@@ -5,7 +5,7 @@ local prettier = require("prettier")
 prettier.setup({
     bin = "prettier",
     filetypes = {
-        "javascriptreact", "typescriptreact", "javascript", "typescript", "json", "yaml", "markdown", "astro", "html", "jsx"
+        "javascriptreact", "typescriptreact", "javascript", "typescript", "json", "yaml", "markdown", "astro", "html", "jsx", "java"
     }
 })
 
@@ -18,7 +18,7 @@ local sources = {
         filetypes = { "go" },
     }),
     null_ls.builtins.formatting.prettier.with({
-        filetypes = { "javascriptreact", "typescriptreact", "javascript", "typescript", "json", "yaml", "markdown", "astro", "html", "jsx" },
+        filetypes = { "javascriptreact", "typescriptreact", "javascript", "typescript", "json", "yaml", "markdown", "astro", "html", "jsx", "java" },
     }),
 
 }
