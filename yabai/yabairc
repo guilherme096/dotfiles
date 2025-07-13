@@ -1,0 +1,70 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+# default layout
+yabai -m config layout stack
+
+# New window spawns to the right if vertical split, or bottom if horizontal split
+yabai -m config window_placement second_child
+
+# padding set to 12px
+yabai -m config top_padding 8
+yabai -m config bottom_padding 8
+yabai -m config left_padding 8
+yabai -m config right_padding 8
+yabai -m config window_gap 8
+
+yabai -m config auto_balance off
+
+# - - - MOUSE SETTING - - -
+
+
+# center mouse on window with focus
+yabai -m config mouse_follows_focus on
+
+# modifier for clicking and dragging with mouse
+yabai -m config mouse_modifier alt
+# set modifier + left-click drag to move window
+yabai -m config mouse_action1 move
+# set modifier + right-click drag to resize window
+yabai -m config mouse_action2 resize
+
+
+# when window is dropped in center of another window, swap them (on edges it will split it)
+yabai -m mouse_drop_action swap
+
+# - - - RULES - - -
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Flow$" manage=off
+yabai -m rule --add app="^Spotify MiniPlayer" manage=off
+
+# Create 9 spaces at startup
+for space in $(seq 1 9); do
+  yabai -m space --create
+done
+
+yabai -m rule --add app="^Brave$" space=1
+yabai -m rule --add app="^iTerm2$" space=2
+yabai -m rule --add app="^Spotify$" space=4
+
+
+
+yabai -m config                                 \
+    external_bar                 off:40:0       \
+    menubar_opacity              1.0            \
+    display_arrangement_order    default        \
+    window_origin_display        default        \
+    window_placement             second_child   \
+    window_insertion_point       focused        \
+    window_zoom_persist          on             \
+    window_shadow                on             \
+    window_animation_duration    0.0            \
+    window_animation_easing      ease_out_circ  \
+    window_opacity_duration      0.0            \
+    active_window_opacity        1.0            \
+    normal_window_opacity        0.90           \
+    window_opacity               off            \
+    insert_feedback_color        0xffd75f5f     \
+    mouse_modifier               fn             \
+    mouse_action1                move           \
+    mouse_action2                resize         \

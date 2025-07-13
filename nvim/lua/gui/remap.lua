@@ -34,8 +34,42 @@ vim.keymap.set("n", "<C-.>", "<Cmd>tabprev<CR>")
 -- Copilot
 vim.keymap.set("n", "<leader>cpe", "<Cmd>Copilot enable<CR>")
 vim.keymap.set("n", "<leader>cpd", "<Cmd>Copilot disable<CR>")
-
 -- Auto close brackets
 vim.keymap.set("i", "{", "{}<Left>")
--- fugitive
-vim.keymap.set("n", "<leader>ga", "<Cmd>Git add .<CR>")
+
+local augroup = vim.api.nvim_create_augroup
+local MyGroup = augroup("My", {})
+local autocmd = vim.api.nvim_create_autocmd
+autocmd({ "BufWritePre" }, {
+	group = MyGroup,
+	pattern = "*",
+	command = [[%s/\s\+$//e]],
+})
+
+autocmd("LspAttach", {
+	group = MyGroup,
+	callback = function(e)
+		local opts = { buffer = e.buffer }
+		vim.keymap.set("n", "gd", function()
+			vim.lsp.buf.definition()
+		end, opts)
+		vim.keymap.set("n", "K", function()
+			vim.lsp.buf.hover()
+		end, opts)
+		vim.keymap.set("n", "dº", function()
+			vim.diagnostic.goto_next()
+		end, opts)
+		vim.keymap.set("n", "d´", function()
+			vim.diagnostic.goto_prev()
+		end, opts)
+		vim.keymap.set("n", "<leader>ga", function()
+			vim.lsp.buf.code_action()
+		end, opts)
+		vim.keymap.set("n", "<leader>gr", function()
+			vim.lsp.buf.references()
+		end, opts)
+		vim.keymap.set("n", "<leader>vrn", function()
+			vim.lsp.buf.rename()
+		end, opts)
+	end,
+})

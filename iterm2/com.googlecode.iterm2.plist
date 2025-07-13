@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AutoHideTmuxClientSession</key>
@@ -2946,7 +2948,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>12</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/gui</string>
 		</dict>

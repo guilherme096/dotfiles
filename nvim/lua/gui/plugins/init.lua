@@ -1,1 +1,0 @@
-require('gui.plugins.packer')

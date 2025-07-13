@@ -1,9 +1,6 @@
 set fish_greeting "🌹"
 
-set -Ux CLASSPATH /usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPATH
-set -gx PATH /usr/local/bin/antlr4:$PATH
 
-funcsave antlr4
 
 set -gx TERM xterm-256color
 
@@ -23,12 +20,17 @@ alias lla='ls -la'
 alias lt='ls --tree'
 alias g git
 command -qv nvim && alias vim nvim
+alias ssh-voyage='ssh -i ~/Downloads/voyage-prod-key.pem voyage@20.199.95.151'
+alias ssh-vm-aettua='ssh aettua@deti-aett.ua.pt'
+alias claude "~/.claude/local/claude"
+
 
 set -gx EDITOR nvim
 
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
+set -U fish_user_paths ~/anaconda3/bin $fish_user_paths
 
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
