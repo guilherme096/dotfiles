@@ -13,6 +13,7 @@ set -g status "on"
 set -g status-right-length "100"
 set -g status-bg "#1d2021"
 set -g status-position top
+set -g allow-passthrough on
 
 set -g status-justify "left"
 setw -g window-status-separator ""

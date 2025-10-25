@@ -1,0 +1,12 @@
+simplified_ui true
+show_startup_tips false
+pane_frames false
+
+keybinds {
+  locked {
+    bind "Ctrl s" {SwitchToMode "Normal";}
+  }
+  shared_except "locked" {
+    bind "Ctrl s" {SwitchToMode "Locked";}
+  }
+}

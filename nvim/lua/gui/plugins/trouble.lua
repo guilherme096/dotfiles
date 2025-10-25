@@ -1,22 +1,24 @@
 return {
 	{
 		"folke/trouble.nvim",
-		config = function()
-			require("trouble").setup({
-				icons = false,
-			})
-
-			vim.keymap.set("n", "<leader>tt", function()
-				require("trouble").toggle()
-			end)
-
-			vim.keymap.set("n", "<leader>tn", function()
-				require("trouble").next({ skip_groups = true, jump = true })
-			end)
-
-			vim.keymap.set("n", "<leader>tp", function()
-				require("trouble").previous({ skip_groups = true, jump = true })
-			end)
-		end,
+		opts = {},
+		cmd = "Trouble",
+		keys = {
+			{
+				"<leader>tr",
+				"<cmd>Trouble diagnostics toggle<cr>",
+				desc = "Diagnostics (Trouble)",
+			},
+			{
+				"<leader>cl",
+				"<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+				desc = "LSP Definitions / references / ... (Trouble)",
+			},
+			{
+				"<leader>xQ",
+				"<cmd>Trouble qflist toggle<cr>",
+				desc = "Quickfix List (Trouble)",
+			},
+		},
 	},
 }

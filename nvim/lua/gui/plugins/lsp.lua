@@ -18,8 +18,8 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "black" },
 				javascript = { "prettier" },
+				go = { "gofmt" },
 			},
 		})
 		vim.api.nvim_create_autocmd("BufWritePre", {
@@ -43,6 +43,7 @@ return {
 			ensure_installed = {
 				"lua_ls",
 				"pyright",
+				"gopls",
 			},
 			handlers = {
 				function(server_name) -- default handler (optional)

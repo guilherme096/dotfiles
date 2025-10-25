@@ -38,14 +38,7 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Flow$" manage=off
 yabai -m rule --add app="^Spotify MiniPlayer" manage=off
 
-# Create 9 spaces at startup
-for space in $(seq 1 9); do
-  yabai -m space --create
-done
 
-yabai -m rule --add app="^Brave$" space=1
-yabai -m rule --add app="^iTerm2$" space=2
-yabai -m rule --add app="^Spotify$" space=4
 
 
 
