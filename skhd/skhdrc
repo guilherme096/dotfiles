@@ -57,5 +57,4 @@ cmd + alt + shift - 8 : yabai -m window --space space_8
 cmd + alt + shift - 9 : yabai -m window --space space_9
 cmd + alt + shift - 0 : yabai -m window --space space_10
 
-shift + alt + tab - 1 : yabai -m space --display 1
-shift + alt + tab - 2 : yabai -m space --display 2
+shift + alt - tab : yabai -m space --display recent

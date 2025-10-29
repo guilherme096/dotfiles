@@ -34,11 +34,10 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
-alias ssh-voyage='ssh -i ~/Downloads/voyage-prod-key.pem voyage@20.199.95.151'
 alias ssh-vm-aettua='ssh aettua@deti-aett.ua.pt'
 alias claude "~/.claude/local/claude"
-alias dpostgis "~/uni/4ano/sod/labs/dpostgis"
 alias zj='zellij'
+alias rpd='~/dotfiles/yabai/persistent_desktops.sh'
 
 command -v nvim >/dev/null && alias vim nvim
 
