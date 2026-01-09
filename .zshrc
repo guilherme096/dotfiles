@@ -61,3 +61,4 @@ export PATH="node_modules/.bin:$PATH"
 autoload -U compinit; compinit
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export TERM=xterm-256color
+export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
