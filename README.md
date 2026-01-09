@@ -3,9 +3,10 @@
 just a repo with my configs
 
 Personal config files for:
-- Fish shell
-- iTerm2 
+- Bash shell
+- Ghostty
 - Neovim (using Lazy.nvim)
 - Window managers (skhd/yabai)
+- Zellij (terminal multiplexer)
 - Other dev tools
 
